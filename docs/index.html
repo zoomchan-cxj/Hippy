@@ -7,59 +7,10 @@
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="icon" href="//res.imtt.qq.com/hippydoc/img/hippy-logo.ico">
-  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css" title="vue">
 </head>
 <body>
-  <div id="app">Loading ...</div>
   <script>
-    window.$docsify = {
-      name: 'Hippy',
-      repo: 'https://github.com/Tencent/Hippy',
-      formatUpdated: '{MM}/{DD} {HH}:{mm}',
-      themeColor: '#2d6feb',
-      auto2top: true,
-      coverpage: true,
-      loadSidebar: true,
-      loadNavbar: true,
-      mergeNavbar: true,
-      maxLevel: 4,
-      subMaxLevel: 1,
-    }
-  </script>
-  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
-  <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
-  <script src="//unpkg.com/prismjs/components/prism-jsx.min.js"></script>
-  <script src="//unpkg.com/prismjs/components/prism-json.min.js"></script>
-  <script src="//unpkg.com/prismjs/components/prism-css.min.js"></script>
-  <script src="//unpkg.com/prismjs/components/prism-java.min.js"></script>
-  <script src="//unpkg.com/prismjs/components/prism-objectivec.min.js"></script>
-  <script src="//unpkg.com/prismjs/components/prism-bash.min.js"></script>
-  <script src="//unpkg.com/prismjs/components/prism-cpp.min.js"></script>
-  <script>
-  	var _mtac = {"senseQuery":1};
-  	(function() {
-  		var mta = document.createElement("script");
-  		mta.src = "//pingjs.qq.com/h5/stats.js?v2.0.4";
-  		mta.setAttribute("name", "MTAH5");
-  		mta.setAttribute("sid", "500707886");
-  		mta.setAttribute("cid", "500709715");
-  		var s = document.getElementsByTagName("script")[0];
-  		s.parentNode.insertBefore(mta, s);
-  	})();
-  </script>
-  <script>
-    (function () {
-      if (['zh-CN', 'zh'].indexOf(navigator.language) !== -1 && location.host !== 'cn.hippyjs.org') {
-        if (localStorage.getItem('PREFER_GITHUB')) {
-          return;
-        }
-        if (confirm('建议大陆用户访问部署在国内的 cn.hippyjs.org，如需跳转请点击“确定”按钮。')) {
-          location.replace(location.protocol + '//cn.hippyjs.org/' + location.hash);
-        } else {
-          localStorage.setItem('PREFER_GITHUB', true);
-        }
-      }
-    })();
+    location.replace(location.protocol + '//hippyjs.org/' + location.hash);
   </script>
 </body>
 </html>
